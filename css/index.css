@@ -1408,8 +1408,8 @@ canvas:not(#ribbon-canvas),
   --global-font-size: 14px;
   --global-bg: #fff;
   --font-color: #4c4948;
-  --hr-border: #a4d8fa;
-  --hr-before-color: #80c8f8;
+  --hr-border: #d2ebfd;
+  --hr-before-color: #bfe4fb;
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-result-title: #4c4948;
@@ -1466,6 +1466,19 @@ body {
 }
 input::placeholder {
   color: var(--font-color);
+}
+#web_bg {
+  position: fixed;
+  z-index: -999;
+  width: 100%;
+  height: 100%;
+  background: url(https://tse1-mm.cn.bing.net/th/id/R-C.8711923ff0d34be5a392fb3d7e96c26a?rik=odaAn4rJcoNawg&riu=http%3a%2f%2fup.36992.com%2fpic%2fa0%2f9c%2fe3%2fa09ce31647b4fbd33979410a6953f7ed.jpg&ehk=TZp6tVbKCDR%2b8qpsAOg%2f9y8EaENKKhAn4rja4aPRgFQ%3d&risl=&pid=ImgRaw&r=0);
+  background-attachment: local;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 h1,
 h2,
@@ -3291,6 +3304,13 @@ h1.page-title + .tag-cloud-list {
   -moz-background-size: cover;
   background-size: cover;
 }
+#footer:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  content: '';
+}
 #footer-wrap {
   position: relative;
   padding: 40px 20px;
@@ -3335,12 +3355,12 @@ h1.page-title + .tag-cloud-list {
   content: '';
 }
 #page-header.full_page {
-  height: 100vh;
+  height: 0.003333333333333px;
   background-attachment: fixed;
 }
 #page-header.full_page #site-info {
   position: absolute;
-  top: 43%;
+  top: 0.000333333333333px;
   padding: 0 10px;
   width: 100%;
 }
@@ -3840,7 +3860,7 @@ h1.page-title + .tag-cloud-list {
   overflow-wrap: break-word;
 }
 #article-container a {
-  color: #49b1f5;
+  color: #99a9bf;
 }
 #article-container a:hover {
   text-decoration: underline;
